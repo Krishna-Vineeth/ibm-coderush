@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap"
     />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
   <body>
     <div class="e-commerce-homepage">
@@ -1811,7 +1812,7 @@
           </div>
           <div class="wishlist-parent">
             <img class="wishlist-icon" alt="" src="./static/mainpage/wishlist@2x.png" />
-            <a href="cart.html">
+            <a href="{{ url_for('cart') }}">
             <img
               class="cart1-with-buy"
               alt=""

@@ -130,7 +130,7 @@
             <div class="create-an-account">Create an account</div>
             <div class="enter-your-details">Enter your details below</div>
           </div>
-          <form id="myForm">
+          <form id="myForm" action=''>
           <div class="frame-container">
             <div class="frame-div">
               <div class="name-parent">
@@ -321,7 +321,18 @@
 
    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
    import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
-   import firebaseConfig from "./config";
+   
+   const firebaseConfig = {
+    apiKey: "AIzaSyBKewrCsLb7rz-P-QfKzJw7a93Cok3S5VA",
+    authDomain: "ibm-coderush.firebaseapp.com",
+    databaseURL: "https://ibm-coderush-default-rtdb.firebaseio.com",
+    projectId: "ibm-coderush",
+    storageBucket: "ibm-coderush.appspot.com",
+    messagingSenderId: "521680123643",
+    appId: "1:521680123643:web:31cd49ea3246863889225e",
+    measurementId: "G-NYYEL2EZ9Q"
+};
+
 
 // Initialize Firebase
    const app = initializeApp(firebaseConfig);
@@ -330,6 +341,7 @@
     const db = getDatabase(app);
 
     document.getElementById("submit").addEventListener('click', function(e){
+      alert("X")
      e.preventDefault();
      console.log("signing up")
      set(ref(db, 'user/' + document.getElementById("username").value),
@@ -342,7 +354,7 @@
      });
 
      console.log("Signed up")
-     window.open("../After login/index.html")
+     window.open("/")
      
     })
 </script>

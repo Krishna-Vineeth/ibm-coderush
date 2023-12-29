@@ -500,22 +500,69 @@
       </div>
       <div class="sofanew"> 
       <ul class="sofaContainer"></ul>
-        <script>
+        <script type="module">
+
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+          import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+          
+                
+        const firebaseConfig = {
+          apiKey: "AIzaSyBKewrCsLb7rz-P-QfKzJw7a93Cok3S5VA",
+          authDomain: "ibm-coderush.firebaseapp.com",
+          databaseURL: "https://ibm-coderush-default-rtdb.firebaseio.com",
+          projectId: "ibm-coderush",
+          storageBucket: "ibm-coderush.appspot.com",
+          messagingSenderId: "521680123643",
+          appId: "1:521680123643:web:31cd49ea3246863889225e",
+          measurementId: "G-NYYEL2EZ9Q"
+        };
+
+        const app = initializeApp(firebaseConfig);
+
+          const db = getDatabase(app);
+          const userRef = ref(db, `/products`);
+
+
+          get(userRef)
+            .then((snapshot) => {
+                let webSofas = snapshot.val();
+                webSofas = webSofas.sofa
+
+                console.log(Object.keys(webSofas))
+
+              Object.entries(webSofas).forEach((sofaArr) => {
+                console.log(sofaArr[1]);
+                sofa.push(sofaArr[1])
+
+              })
+              
+              for (index in sofa) {
+                let li = document.createElement("li");
+                li.setAttribute("class", `sofa sofa${index} show`);
+                li.setAttribute("n", sofa[index].name.toLowerCase());
+                li.setAttribute("c", sofa[index].price);
+                
+                liContent = `<img src='${sofa[index].image}' /> <h3>${sofa[index].name}</h3> <p>${sofa[index].price}</p>`;
+                li.innerHTML = liContent;
+                sofaContainer.appendChild(li);
+                allLis.push(li);
+            }
+                // Now you can use the userDetails as needed
+            })
+            .catch((error) => {
+                console.error("Error retrieving user details: ", error);
+          }); 
+
+
+
         let allLis = [];
 
         let sofaContainer = document.querySelector(".sofaContainer");
         let liContent = "";
-        for (index in sofa) {
-            let li = document.createElement("li");
-            li.setAttribute("class", `sofa sofa${index} show`);
-            li.setAttribute("n", sofa[index].name.toLowerCase());
-            li.setAttribute("c", sofa[index].price);
-            
-            liContent = `<img src='${sofa[index].image}' /> <h3>${sofa[index].name}</h3> <p>${sofa[index].price}</p>`;
-            li.innerHTML = liContent;
-            sofaContainer.appendChild(li);
-            allLis.push(li);
-        }
+        let index = 0;
+
+        console.log(sofa)
+
         // Reference to the Firebase Realtime Database
 /*
         const firebaseConfig = {
