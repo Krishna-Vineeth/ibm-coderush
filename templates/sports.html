@@ -1,0 +1,4271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@500&display=swap"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        line-height: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        font-size: 40px;
+        color: #000;
+        font-family: Poppins;
+      "
+    >
+      <div
+        style="
+          position: relative;
+          background-color: #38cb89;
+          width: 1440px;
+          height: 40px;
+          text-align: center;
+          font-size: 14px;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(50% - 196px);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 12px;
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              gap: 12px;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                width: 24px;
+                height: 24px;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/ticketpercent@2x.png"
+            />
+
+            <div
+              style="position: relative; line-height: 22px; font-weight: 600"
+            >
+              30% off storewide — Limited time!
+            </div>
+          </div>
+          <div
+            style="
+              border-bottom: 1px solid #000;
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 4px;
+              "
+            >
+              <div
+                style="position: relative; line-height: 24px; font-weight: 500"
+              >
+                Shop Now
+              </div>
+              <img
+                style="
+                  position: relative;
+                  width: 18px;
+                  height: 18px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/iconarrowright@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <img
+          style="
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 16px;
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+          "
+          alt=""
+          src="./public/iconclose@2x.png"
+        />
+      </div>
+      <div
+        style="
+          background-color: rgba(255, 255, 255, 0);
+          width: 1440px;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px 160px;
+          box-sizing: border-box;
+          text-align: center;
+          font-size: 24px;
+        "
+      >
+        <div style="position: relative; width: 105px; height: 24px">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              left: -40px;
+              line-height: 24px;
+              font-weight: 500;
+              display: inline-block;
+              width: 225px;
+            "
+          >
+            Cognitive Crew
+          </div>
+        </div>
+        <div
+          style="
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            text-align: left;
+            font-size: 14px;
+            color: #141718;
+            font-family: 'Space Grotesk';
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    object-fit: cover;
+                    display: none;
+                  "
+                  alt=""
+                />
+
+                <div
+                  style="
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 500;
+                  "
+                >
+                  Home
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2px;
+              "
+            >
+              <div
+                style="
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    object-fit: cover;
+                    display: none;
+                  "
+                  alt=""
+                />
+
+                <div
+                  style="
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 500;
+                  "
+                >
+                  Shop
+                </div>
+              </div>
+              <img
+                style="
+                  position: relative;
+                  width: 18px;
+                  height: 18px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/iconchevrondown@2x.png"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2px;
+              "
+            >
+              <div
+                style="
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+                    object-fit: cover;
+                    display: none;
+                  "
+                  alt=""
+                />
+
+                <div
+                  style="
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 500;
+                  "
+                >
+                  Product
+                </div>
+              </div>
+              <img
+                style="
+                  position: relative;
+                  width: 18px;
+                  height: 18px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/iconchevrondown@2x.png"
+              />
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    line-height: 24px;
+                    font-weight: 500;
+                  "
+                >
+                  Contact Us
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 16px;
+            font-size: 12px;
+            color: #fff;
+            font-family: Inter;
+          "
+        >
+          <img
+            style="
+              position: relative;
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              flex-shrink: 0;
+              object-fit: cover;
+            "
+            alt=""
+            src="./public/interfaceoutlinesearch-02@2x.png"
+          />
+
+          <img
+            style="
+              position: relative;
+              width: 24px;
+              height: 24px;
+              overflow: hidden;
+              flex-shrink: 0;
+              object-fit: cover;
+            "
+            alt=""
+            src="./public/interfaceoutlineusercircle@2x.png"
+          />
+
+          <div style="position: relative; width: 50px; height: 28px">
+            <div
+              style="
+                position: absolute;
+                top: 4px;
+                left: 30px;
+                width: 20px;
+                height: 20px;
+                overflow: hidden;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: calc(50% - 10px);
+                  right: 0px;
+                  border-radius: 50%;
+                  background-color: #141718;
+                  width: 20px;
+                  height: 20px;
+                "
+              ></div>
+              <b
+                style="
+                  position: absolute;
+                  top: calc(50% - 5px);
+                  right: 6px;
+                  line-height: 10px;
+                "
+                >2</b
+              >
+            </div>
+            <img
+              style="
+                position: absolute;
+                top: 2px;
+                left: 1px;
+                width: 24px;
+                height: 24px;
+                overflow: hidden;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/outlineshopping-bag@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: flex-start;
+          font-size: 72px;
+          color: #fefefe;
+        "
+      >
+        <div style="position: relative; width: 1440px; height: 820px">
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 1440px;
+              height: 820px;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="C:\Users\Akhila\Desktop\Code Rush (2)\Code Rush\Sports Design\FigmaAssets 29-12-2023 efGo\Paste image_I22_3195;116_6829.png"
+            />
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: calc(50% - 214px);
+              left: calc(50% - 548px);
+              width: 497px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              gap: 28px;
+            "
+          >
+            <div
+              style="
+                align-self: stretch;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: center;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    letter-spacing: -2px;
+                    line-height: 80px;
+                    font-weight: 500;
+                    background: linear-gradient(
+                      180deg,
+                      rgba(255, 255, 255, 0),
+                      #fff 13.77%,
+                      #fff 74.49%,
+                      rgba(255, 255, 255, 0) 91.07%
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                  "
+                >
+                  <p style="margin: 0">More than</p>
+                  <p style="margin: 0">just a game.</p>
+                  <p style="margin: 0">It’s a lifestyle.</p>
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  font-size: 20px;
+                  line-height: 32px;
+                  font-family: Inter;
+                  display: inline-block;
+                  width: 424px;
+                "
+              >
+                Whether you’re just starting out, have played your whole life or
+                you're a Tour pro, your swing is like a fingerprint.
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 8px;
+                background-color: #38cb89;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 56px;
+                text-align: center;
+                font-size: 18px;
+                color: #141718;
+                font-family: Inter;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  letter-spacing: -0.4px;
+                  line-height: 32px;
+                  font-weight: 500;
+                "
+              >
+                Shopping Now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          width: 1440px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 48px 0px 48px 160px;
+          box-sizing: border-box;
+          gap: 48px;
+        "
+      >
+        <div
+          style="
+            width: 1120px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              letter-spacing: -0.4px;
+              line-height: 44px;
+              font-weight: 500;
+            "
+          >
+            Featured
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-end;
+              gap: 8px;
+            "
+          >
+            <img
+              style="
+                position: relative;
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/elements@2x.png"
+            />
+
+            <img
+              style="
+                position: relative;
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/elements@2x.png"
+            />
+
+            <img
+              style="
+                position: relative;
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/elements@2x.png"
+            />
+
+            <img
+              style="
+                position: relative;
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+                display: none;
+              "
+              alt=""
+            />
+
+            <img
+              style="
+                position: relative;
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+                object-fit: cover;
+                display: none;
+              "
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          style="
+            width: 1280px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 24px;
+            text-align: center;
+            font-size: 16px;
+            color: #fefefe;
+            font-family: Inter;
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 262px;
+                height: 349px;
+                flex-shrink: 0;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 262px;
+                  height: 349px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 13.18%;
+                  width: 87.79%;
+                  top: 82.23%;
+                  right: 6.11%;
+                  bottom: 4.58%;
+                  left: 6.11%;
+                  border-radius: 8px;
+                  background-color: #141718;
+                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8px 24px;
+                  box-sizing: border-box;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    font-weight: 500;
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 16px;
+                  border-radius: 32px;
+                  background-color: #fff;
+                  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+                  width: 32px;
+                  height: 32px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 6px;
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  style="
+                    align-self: stretch;
+                    flex: 1;
+                    position: relative;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 16px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  color: #121212;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #fff;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >HOT</b
+                  >
+                </div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #38cb89;
+                    flex-shrink: 0;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                    color: #fefefe;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >-50%</b
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 262px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 88px;
+                    height: 16px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/ratingrating-group@2x.png"
+                />
+
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 26px;
+                    font-weight: 600;
+                  "
+                >
+                  Shark - Men's cabretta white golf glove
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    font-size: 14px;
+                    color: #121212;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      font-weight: 600;
+                    "
+                  >
+                    $19.00
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      text-decoration: line-through;
+                      line-height: 22px;
+                      color: #6c7275;
+                      display: none;
+                    "
+                  >
+                    $400.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 262px;
+                height: 349px;
+                flex-shrink: 0;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 262px;
+                  height: 349px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 13.18%;
+                  width: 87.79%;
+                  top: 82.23%;
+                  right: 6.11%;
+                  bottom: 4.58%;
+                  left: 6.11%;
+                  border-radius: 8px;
+                  background-color: #141718;
+                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8px 24px;
+                  box-sizing: border-box;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    font-weight: 500;
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 16px;
+                  border-radius: 32px;
+                  background-color: #fff;
+                  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+                  width: 32px;
+                  height: 32px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 6px;
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  style="
+                    align-self: stretch;
+                    flex: 1;
+                    position: relative;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 16px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  color: #121212;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #fff;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >HOT</b
+                  >
+                </div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #38cb89;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                    color: #fefefe;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >-50%</b
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 262px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 88px;
+                    height: 16px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/ratingrating-group@2x.png"
+                />
+
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 26px;
+                    font-weight: 600;
+                  "
+                >
+                  Greg Norman - Men's Shark Logo Golf Polo Shirt
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    font-size: 14px;
+                    color: #121212;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      font-weight: 600;
+                    "
+                  >
+                    $24.99
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      text-decoration: line-through;
+                      line-height: 22px;
+                      color: #6c7275;
+                    "
+                  >
+                    $40.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 262px;
+                height: 349px;
+                flex-shrink: 0;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 262px;
+                  height: 349px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 13.18%;
+                  width: 87.79%;
+                  top: 82.23%;
+                  right: 6.11%;
+                  bottom: 4.58%;
+                  left: 6.11%;
+                  border-radius: 8px;
+                  background-color: #141718;
+                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8px 24px;
+                  box-sizing: border-box;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    font-weight: 500;
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 16px;
+                  border-radius: 32px;
+                  background-color: #fff;
+                  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+                  width: 32px;
+                  height: 32px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 6px;
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  style="
+                    align-self: stretch;
+                    flex: 1;
+                    position: relative;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 16px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  color: #121212;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #fff;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >hOT</b
+                  >
+                </div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #38cb89;
+                    flex-shrink: 0;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                    color: #fefefe;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >-50%</b
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 262px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 88px;
+                    height: 16px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/ratingrating-group@2x.png"
+                />
+
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 26px;
+                    font-weight: 600;
+                  "
+                >
+                  G/FORE - Mens Left Glove Snow 2023
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    font-size: 14px;
+                    color: #121212;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      font-weight: 600;
+                    "
+                  >
+                    $30.00
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      text-decoration: line-through;
+                      line-height: 22px;
+                      color: #6c7275;
+                      display: none;
+                    "
+                  >
+                    $400.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 262px;
+                height: 349px;
+                flex-shrink: 0;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 262px;
+                  height: 349px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 13.18%;
+                  width: 87.79%;
+                  top: 82.23%;
+                  right: 6.11%;
+                  bottom: 4.58%;
+                  left: 6.11%;
+                  border-radius: 8px;
+                  background-color: #141718;
+                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8px 24px;
+                  box-sizing: border-box;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    font-weight: 500;
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 16px;
+                  border-radius: 32px;
+                  background-color: #fff;
+                  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+                  width: 32px;
+                  height: 32px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 6px;
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  style="
+                    align-self: stretch;
+                    flex: 1;
+                    position: relative;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 16px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  color: #121212;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #fff;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >hOT</b
+                  >
+                </div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #38cb89;
+                    flex-shrink: 0;
+                    display: none;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                    color: #fefefe;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >-50%</b
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 262px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 88px;
+                    height: 16px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/ratingrating-group@2x.png"
+                />
+
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 26px;
+                    font-weight: 600;
+                  "
+                >
+                  Utility Rover-R Double Strap Bag All Black - 2023
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    font-size: 14px;
+                    color: #121212;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      font-weight: 600;
+                    "
+                  >
+                    $209.99
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      text-decoration: line-through;
+                      line-height: 22px;
+                      color: #6c7275;
+                      display: none;
+                    "
+                  >
+                    $400.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 12px;
+            "
+          >
+            <div
+              style="
+                position: relative;
+                width: 262px;
+                height: 349px;
+                flex-shrink: 0;
+              "
+            >
+              <div
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 262px;
+                  height: 349px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  height: 13.18%;
+                  width: 87.79%;
+                  top: 82.23%;
+                  right: 6.11%;
+                  bottom: 4.58%;
+                  left: 6.11%;
+                  border-radius: 8px;
+                  background-color: #141718;
+                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.04);
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 8px 24px;
+                  box-sizing: border-box;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.4px;
+                    line-height: 28px;
+                    font-weight: 500;
+                  "
+                >
+                  Add to cart
+                </div>
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  right: 16px;
+                  border-radius: 32px;
+                  background-color: #fff;
+                  box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.12);
+                  width: 32px;
+                  height: 32px;
+                  display: none;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 6px;
+                  box-sizing: border-box;
+                "
+              >
+                <img
+                  style="
+                    align-self: stretch;
+                    flex: 1;
+                    position: relative;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  top: 16px;
+                  left: 16px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 8px;
+                  color: #121212;
+                "
+              >
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #fff;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >hOT</b
+                  >
+                </div>
+                <div
+                  style="
+                    border-radius: 4px;
+                    background-color: #38cb89;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px 14px;
+                    color: #fefefe;
+                  "
+                >
+                  <b
+                    style="
+                      position: relative;
+                      line-height: 16px;
+                      text-transform: uppercase;
+                    "
+                    >-50%</b
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 262px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                text-align: left;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 4px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 88px;
+                    height: 16px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/ratingrating-group@2x.png"
+                />
+
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    line-height: 26px;
+                    font-weight: 600;
+                  "
+                >
+                  Air Jordan 1 Low G Black/Black/Iron Grey - SS23
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 12px;
+                    font-size: 14px;
+                    color: #121212;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      font-weight: 600;
+                    "
+                  >
+                    $111.99
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      text-decoration: line-through;
+                      line-height: 22px;
+                      color: #6c7275;
+                    "
+                  >
+                    $200.00
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          width: 1440px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 80px 160px;
+          box-sizing: border-box;
+          gap: 48px;
+          text-align: center;
+          font-size: 20px;
+          color: #23262f;
+        "
+      >
+        <div
+          style="
+            position: relative;
+            font-size: 40px;
+            letter-spacing: -0.4px;
+            line-height: 44px;
+            font-weight: 500;
+            text-align: left;
+          "
+        >
+          Shop by Categories
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 24px;
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Golf Clubs
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Golf Balls
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Golf Bags
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 24px;
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Clothing & Rainwear
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Footwear
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 309px">
+              <img
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  width: 357px;
+                  height: 309px;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 256px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Accessories
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          position: relative;
+          width: 1440px;
+          height: 532px;
+          font-size: 16px;
+          color: #fefefe;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              height: 100%;
+              width: calc(100% - 720px);
+              top: 0px;
+              right: 720px;
+              bottom: 0px;
+              left: 0px;
+              overflow: hidden;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: calc(50% - 266px);
+              left: 720px;
+              background-color: #141718;
+              width: 720px;
+              height: 532px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              padding: 0px 160px 0px 72px;
+              box-sizing: border-box;
+              gap: 24px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 16px;
+              "
+            >
+              <b
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  line-height: 16px;
+                  text-transform: uppercase;
+                  color: #38cb89;
+                "
+                >Limited Edition</b
+              >
+              <div
+                style="
+                  align-self: stretch;
+                  position: relative;
+                  font-size: 40px;
+                  letter-spacing: -0.4px;
+                  line-height: 44px;
+                  font-weight: 500;
+                  font-family: Poppins;
+                "
+              >
+                Hurry up! 30% OFF
+              </div>
+              <div
+                style="
+                  position: relative;
+                  font-size: 20px;
+                  line-height: 32px;
+                  display: inline-block;
+                  width: 452px;
+                "
+              >
+                Find clubs that are right for your game
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 12px;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  line-height: 26px;
+                  display: inline-block;
+                  width: 360px;
+                "
+              >
+                Offer expires in:
+              </div>
+              <div
+                style="
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 16px;
+                  text-align: center;
+                  font-size: 34px;
+                  color: #141718;
+                  font-family: Poppins;
+                "
+              >
+                <div style="position: relative; width: 60px; height: 80px">
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background-color: #fefefe;
+                      width: 60px;
+                      height: 60px;
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        top: calc(50% - 19px);
+                        left: calc(50% - 20px);
+                        letter-spacing: -0.6px;
+                        line-height: 38px;
+                        font-weight: 500;
+                      "
+                    >
+                      02
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 60px;
+                      left: 15px;
+                      font-size: 12px;
+                      line-height: 20px;
+                      font-family: Inter;
+                    "
+                  >
+                    Days
+                  </div>
+                </div>
+                <div style="position: relative; width: 60px; height: 80px">
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background-color: #fefefe;
+                      width: 60px;
+                      height: 60px;
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        top: calc(50% - 19px);
+                        left: calc(50% - 15px);
+                        letter-spacing: -0.6px;
+                        line-height: 38px;
+                        font-weight: 500;
+                      "
+                    >
+                      12
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 60px;
+                      left: 12px;
+                      font-size: 12px;
+                      line-height: 20px;
+                      font-family: Inter;
+                    "
+                  >
+                    Hours
+                  </div>
+                </div>
+                <div style="position: relative; width: 60px; height: 80px">
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background-color: #fefefe;
+                      width: 60px;
+                      height: 60px;
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        top: calc(50% - 19px);
+                        left: calc(50% - 22px);
+                        letter-spacing: -0.6px;
+                        line-height: 38px;
+                        font-weight: 500;
+                      "
+                    >
+                      45
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 60px;
+                      left: 6px;
+                      font-size: 12px;
+                      line-height: 20px;
+                      font-family: Inter;
+                    "
+                  >
+                    Minutes
+                  </div>
+                </div>
+                <div style="position: relative; width: 60px; height: 80px">
+                  <div
+                    style="
+                      position: absolute;
+                      top: 0px;
+                      left: 0px;
+                      background-color: #fefefe;
+                      width: 60px;
+                      height: 60px;
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        top: calc(50% - 19px);
+                        left: calc(50% - 21px);
+                        letter-spacing: -0.6px;
+                        line-height: 38px;
+                        font-weight: 500;
+                      "
+                    >
+                      05
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      position: absolute;
+                      top: 60px;
+                      left: 4px;
+                      font-size: 12px;
+                      line-height: 20px;
+                      font-family: Inter;
+                    "
+                  >
+                    Seconds
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                border-radius: 8px;
+                background-color: #38cb89;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 6px 40px;
+                text-align: center;
+                color: #141718;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  letter-spacing: -0.4px;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                Shop now
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 48px 0px;
+          gap: 48px;
+        "
+      >
+        <div
+          style="
+            width: 1120px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              letter-spacing: -0.4px;
+              line-height: 44px;
+              font-weight: 500;
+            "
+          >
+            Shop Collection
+          </div>
+        </div>
+        <div
+          style="
+            background-color: #fff;
+            width: 1440px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0px 160px;
+            box-sizing: border-box;
+            gap: 24px;
+            font-size: 34px;
+            color: #121212;
+          "
+        >
+          <div style="position: relative; width: 548px; height: 664px">
+            <div
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                overflow: hidden;
+              "
+            >
+              <img
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0%;
+                  right: 0%;
+                  bottom: 0%;
+                  left: 0%;
+                  max-width: 100%;
+                  overflow: hidden;
+                  max-height: 100%;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/paste-image@2x.png"
+              />
+            </div>
+            <div
+              style="
+                position: absolute;
+                top: 538px;
+                left: 48px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 12px;
+              "
+            >
+              <div
+                style="
+                  width: 360px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    letter-spacing: -0.6px;
+                    line-height: 38px;
+                    font-weight: 500;
+                  "
+                >
+                  Juniors Set
+                </div>
+                <div
+                  style="
+                    align-self: stretch;
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-family: Inter;
+                    color: #3e3e59;
+                    white-space: pre-wrap;
+                    display: none;
+                  "
+                >
+                  Phosfluor escently engage worldwide with web-enabled
+                  technology.
+                </div>
+              </div>
+              <div
+                style="
+                  border-bottom: 1px solid #121212;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                  font-size: 16px;
+                  font-family: Inter;
+                "
+              >
+                <div
+                  style="
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      letter-spacing: -0.4px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    Collections
+                  </div>
+                </div>
+                <img
+                  style="
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/iconarrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              width: 548px;
+              height: 662px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 548px; height: 319px">
+              <div
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0px;
+                  right: 0px;
+                  bottom: 0px;
+                  left: 0px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  bottom: 40px;
+                  left: 32px;
+                  width: 420px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.6px;
+                    line-height: 38px;
+                    font-weight: 500;
+                    display: inline-block;
+                    width: 516px;
+                  "
+                >
+                  Men’s Set
+                </div>
+                <div
+                  style="
+                    border-bottom: 1px solid #121212;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 4px;
+                    font-size: 16px;
+                    font-family: Inter;
+                  "
+                >
+                  <div
+                    style="
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        letter-spacing: -0.4px;
+                        line-height: 28px;
+                        font-weight: 500;
+                      "
+                    >
+                      Collections
+                    </div>
+                  </div>
+                  <img
+                    style="
+                      position: relative;
+                      width: 20px;
+                      height: 20px;
+                      object-fit: cover;
+                    "
+                    alt=""
+                    src="./public/iconarrowright@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div style="position: relative; width: 548px; height: 319px">
+              <div
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0px;
+                  right: 0px;
+                  bottom: 0px;
+                  left: 0px;
+                  overflow: hidden;
+                "
+              >
+                <img
+                  style="
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    top: 0%;
+                    right: 0%;
+                    bottom: 0%;
+                    left: 0%;
+                    max-width: 100%;
+                    overflow: hidden;
+                    max-height: 100%;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/paste-image@2x.png"
+                />
+              </div>
+              <div
+                style="
+                  position: absolute;
+                  bottom: 40px;
+                  left: 32px;
+                  width: 420px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    position: relative;
+                    letter-spacing: -0.6px;
+                    line-height: 38px;
+                    font-weight: 500;
+                    display: inline-block;
+                    width: 516px;
+                  "
+                >
+                  Women’s Set
+                </div>
+                <div
+                  style="
+                    border-bottom: 1px solid #121212;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 4px;
+                    font-size: 16px;
+                    font-family: Inter;
+                  "
+                >
+                  <div
+                    style="
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                    "
+                  >
+                    <div
+                      style="
+                        position: relative;
+                        letter-spacing: -0.4px;
+                        line-height: 28px;
+                        font-weight: 500;
+                      "
+                    >
+                      Collections
+                    </div>
+                  </div>
+                  <img
+                    style="
+                      position: relative;
+                      width: 20px;
+                      height: 20px;
+                      object-fit: cover;
+                    "
+                    alt=""
+                    src="./public/iconarrowright@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          width: 1440px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 80px 160px;
+          box-sizing: border-box;
+          gap: 40px;
+        "
+      >
+        <div
+          style="
+            width: 1121px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              letter-spacing: -0.4px;
+              line-height: 44px;
+              font-weight: 500;
+            "
+          >
+            Latest Articles
+          </div>
+          <div
+            style="
+              border-bottom: 1px solid #141718;
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 4px;
+              font-size: 16px;
+              color: #141718;
+              font-family: Inter;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  letter-spacing: -0.4px;
+                  line-height: 28px;
+                  font-weight: 500;
+                "
+              >
+                View More
+              </div>
+            </div>
+            <img
+              style="
+                position: relative;
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/iconarrowright@2x.png"
+            />
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 25px;
+            font-size: 20px;
+            color: #23262f;
+          "
+        >
+          <div
+            style="
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 325px">
+              <img
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0%;
+                  right: 0%;
+                  bottom: 0%;
+                  left: 0%;
+                  max-width: 100%;
+                  overflow: hidden;
+                  max-height: 100%;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 352px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                  display: inline-block;
+                  width: 352px;
+                "
+              >
+                Air Jordan x Travis Scott Event
+              </div>
+              <div
+                style="
+                  border-bottom: 1px solid #141718;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                  font-size: 16px;
+                  color: #141718;
+                  font-family: Inter;
+                "
+              >
+                <div
+                  style="
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      letter-spacing: -0.4px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    Read More
+                  </div>
+                </div>
+                <img
+                  style="
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/iconarrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 325px">
+              <img
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0%;
+                  right: 0%;
+                  bottom: 0%;
+                  left: 0%;
+                  max-width: 100%;
+                  overflow: hidden;
+                  max-height: 100%;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 352px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                  display: inline-block;
+                  width: 352px;
+                "
+              >
+                The timeless classics on the green
+              </div>
+              <div
+                style="
+                  border-bottom: 1px solid #141718;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                  font-size: 16px;
+                  color: #141718;
+                  font-family: Inter;
+                "
+              >
+                <div
+                  style="
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      letter-spacing: -0.4px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    Read More
+                  </div>
+                </div>
+                <img
+                  style="
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/iconarrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 24px;
+            "
+          >
+            <div style="position: relative; width: 357px; height: 325px">
+              <img
+                style="
+                  position: absolute;
+                  height: 100%;
+                  width: 100%;
+                  top: 0%;
+                  right: 0%;
+                  bottom: 0%;
+                  left: 0%;
+                  max-width: 100%;
+                  overflow: hidden;
+                  max-height: 100%;
+                  object-fit: cover;
+                "
+                alt=""
+                src="./public/img@2x.png"
+              />
+            </div>
+            <div
+              style="
+                width: 352px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  line-height: 28px;
+                  font-weight: 500;
+                  display: inline-block;
+                  width: 352px;
+                "
+              >
+                The 2023 Ryder Cup
+              </div>
+              <div
+                style="
+                  border-bottom: 1px solid #141718;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 4px;
+                  font-size: 16px;
+                  color: #141718;
+                  font-family: Inter;
+                "
+              >
+                <div
+                  style="
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      letter-spacing: -0.4px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    Read More
+                  </div>
+                </div>
+                <img
+                  style="
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/iconarrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          position: relative;
+          width: 1440px;
+          height: 360px;
+          text-align: center;
+          color: #fefefe;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1440px;
+            height: 360px;
+          "
+        >
+          <div
+            style="
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              width: 1440px;
+              height: 360px;
+              overflow: hidden;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: absolute;
+              top: 101px;
+              left: 450px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 32px;
+            "
+          >
+            <div
+              style="
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  position: relative;
+                  letter-spacing: -0.4px;
+                  line-height: 44px;
+                  font-weight: 500;
+                  display: inline-block;
+                  width: 456px;
+                "
+              >
+                Join Our Newsletter
+              </div>
+              <div
+                style="
+                  position: relative;
+                  font-size: 18px;
+                  line-height: 30px;
+                  font-family: Inter;
+                  display: inline-block;
+                  width: 540px;
+                "
+              >
+                Sign up for deals, new products and promotions
+              </div>
+            </div>
+            <div
+              style="
+                width: 488px;
+                height: 52px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+                font-size: 16px;
+                font-family: Inter;
+              "
+            >
+              <div
+                style="
+                  align-self: stretch;
+                  border-bottom: 1px solid #fefefe;
+                  box-sizing: border-box;
+                  height: 52px;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 8px;
+                "
+              >
+                <div
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 8px;
+                  "
+                >
+                  <img
+                    style="
+                      position: relative;
+                      width: 24px;
+                      height: 24px;
+                      object-fit: cover;
+                    "
+                    alt=""
+                    src="./public/iconemail@2x.png"
+                  />
+
+                  <div
+                    style="
+                      flex: 1;
+                      position: relative;
+                      letter-spacing: -0.4px;
+                      line-height: 28px;
+                      font-weight: 500;
+                    "
+                  >
+                    Email address
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                  "
+                >
+                  <div
+                    style="
+                      flex-shrink: 0;
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: flex-start;
+                      gap: 4px;
+                    "
+                  >
+                    <img
+                      style="
+                        position: relative;
+                        width: 18px;
+                        height: 18px;
+                        object-fit: cover;
+                        display: none;
+                      "
+                      alt=""
+                    />
+
+                    <div
+                      style="
+                        position: relative;
+                        letter-spacing: -0.4px;
+                        line-height: 28px;
+                        font-weight: 500;
+                      "
+                    >
+                      Signup
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: #fff;
+          width: 1440px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 40px 160px 0px;
+          box-sizing: border-box;
+          gap: 40px;
+          text-align: center;
+          font-size: 20px;
+          color: #6c7275;
+          font-family: Inter;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 16px;
+          "
+        >
+          <b
+            style="
+              align-self: stretch;
+              position: relative;
+              font-size: 16px;
+              line-height: 16px;
+              text-transform: uppercase;
+            "
+            >newsfeed</b
+          >
+          <div
+            style="
+              align-self: stretch;
+              position: relative;
+              font-size: 40px;
+              letter-spacing: -0.4px;
+              line-height: 44px;
+              font-weight: 500;
+              font-family: Poppins;
+              color: #141718;
+            "
+          >
+            Instagram
+          </div>
+          <div style="position: relative; line-height: 32px; color: #141718">
+            Follow us on social media for more discount & promotions
+          </div>
+          <div
+            style="
+              position: relative;
+              line-height: 28px;
+              font-weight: 500;
+              font-family: Poppins;
+            "
+          >
+            @3legant_official
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+          <div
+            style="
+              position: relative;
+              width: 240px;
+              height: 240px;
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              style="
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0%;
+                right: 0%;
+                bottom: 0%;
+                left: 0%;
+                max-width: 100%;
+                overflow: hidden;
+                max-height: 100%;
+                object-fit: cover;
+              "
+              alt=""
+              src="./public/paste-image@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          background-color: #000;
+          flex-shrink: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 80px 160px 32px;
+          font-size: 16px;
+          color: #fefefe;
+        "
+      >
+        <div
+          style="
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 64px;
+          "
+        >
+          <div
+            style="
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              justify-content: flex-start;
+              gap: 32px;
+            "
+          >
+            <div
+              style="
+                width: 544px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 32px;
+                text-align: center;
+                font-size: 24px;
+                color: #fff;
+              "
+            >
+              <div style="position: relative; width: 105px; height: 24px">
+                <div
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    line-height: 24px;
+                    font-weight: 500;
+                  "
+                >
+                  Cognitive Crew
+                </div>
+              </div>
+              <div
+                style="
+                  position: relative;
+                  font-size: 20px;
+                  line-height: 28px;
+                  font-weight: 500;
+                  color: #fefefe;
+                  text-align: left;
+                  display: inline-block;
+                  width: 260px;
+                "
+              >
+                More than just a game. It’s a lifestyle.
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 24px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/socialoutlineinstagram@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/socialoutlinefacebook@2x.png"
+                />
+
+                <div
+                  style="
+                    position: relative;
+                    width: 24px;
+                    height: 24px;
+                    overflow: hidden;
+                    flex-shrink: 0;
+                  "
+                >
+                  <div
+                    style="
+                      position: absolute;
+                      height: 81.25%;
+                      width: 89.58%;
+                      top: 9.38%;
+                      right: 5.21%;
+                      bottom: 9.38%;
+                      left: 5.21%;
+                      border-radius: 4px;
+                      border: 1.5px solid #fefefe;
+                      box-sizing: border-box;
+                    "
+                  ></div>
+                  <img
+                    style="
+                      position: absolute;
+                      height: 33.33%;
+                      width: 33.33%;
+                      top: 33.33%;
+                      right: 29.17%;
+                      bottom: 33.33%;
+                      left: 37.5%;
+                      border-radius: 1px;
+                      max-width: 100%;
+                      overflow: hidden;
+                      max-height: 100%;
+                      object-fit: cover;
+                    "
+                    alt=""
+                    src="./public/vector-2900@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 160px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 40px;
+              "
+            >
+              <div
+                style="position: relative; line-height: 24px; font-weight: 500"
+              >
+                Page
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 24px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: Inter;
+                "
+              >
+                <div style="position: relative; line-height: 22px">Home</div>
+                <div style="position: relative; line-height: 22px">Shop</div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 22px;
+                    display: inline-block;
+                    width: 84px;
+                  "
+                >
+                  Product
+                </div>
+                <div style="position: relative; line-height: 22px">
+                  Articles
+                </div>
+                <div style="position: relative; line-height: 22px">
+                  Contact Us
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 160px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 40px;
+              "
+            >
+              <div
+                style="position: relative; line-height: 24px; font-weight: 500"
+              >
+                Info
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 24px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: Inter;
+                "
+              >
+                <div style="position: relative; line-height: 22px">
+                  Shipping Policy
+                </div>
+                <div style="position: relative; line-height: 22px">
+                  Return & Refund
+                </div>
+                <div style="position: relative; line-height: 22px">Support</div>
+                <div style="position: relative; line-height: 22px">FAQs</div>
+              </div>
+            </div>
+            <div
+              style="
+                width: 160px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 40px;
+              "
+            >
+              <div
+                style="position: relative; line-height: 24px; font-weight: 500"
+              >
+                Office
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 18px;
+                  font-size: 14px;
+                  color: #fff;
+                  font-family: Inter;
+                "
+              >
+                <div
+                  style="
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      display: inline-block;
+                      width: 161px;
+                    "
+                  >
+                    43111 Hai Trieu street,
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      display: inline-block;
+                      width: 161px;
+                    "
+                  >
+                    District 1, HCMC
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      line-height: 22px;
+                      display: inline-block;
+                      width: 161px;
+                    "
+                  >
+                    Vietnam
+                  </div>
+                </div>
+                <div
+                  style="
+                    position: relative;
+                    line-height: 22px;
+                    display: inline-block;
+                    width: 161px;
+                  "
+                >
+                  84-756-3237
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="
+              border-top: 1px solid #6c7275;
+              box-sizing: border-box;
+              height: 96px;
+              flex-shrink: 0;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: center;
+              padding: 32px 0px;
+              font-size: 12px;
+              color: #e8ecef;
+            "
+          >
+            <div
+              style="
+                width: 1120px;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <div
+                style="
+                  width: 1120px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: flex-start;
+                  justify-content: flex-start;
+                  gap: 16px;
+                "
+              >
+                <div style="position: relative; line-height: 20px">
+                  Copyright © 2023 Cognitive Crew. All rights reserved
+                </div>
+                <div
+                  style="
+                    border-left: 1px solid #6c7275;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0px 0px 0px 16px;
+                    gap: 16px;
+                    text-align: right;
+                    color: #6c7275;
+                    font-family: Inter;
+                  "
+                >
+                  <div style="position: relative; line-height: 20px">
+                    Privacy Policy
+                  </div>
+                  <div style="position: relative; line-height: 20px">
+                    Terms & Conditions
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  width: 328px;
+                  flex-shrink: 0;
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: flex-start;
+                  gap: 8px;
+                "
+              >
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+
+                <img
+                  style="
+                    position: relative;
+                    width: 48px;
+                    height: 32px;
+                    object-fit: cover;
+                  "
+                  alt=""
+                  src="./public/payment-methods@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

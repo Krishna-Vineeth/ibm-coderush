@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="static/css/electronicsglobal.css" />
+    <link rel="stylesheet" href="static/css/electronicsindex.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@500&display=swap"
+    />
+    <script src="static/js/electronics.js"></script>
+  </head>
+  <body>
+    <div class="electronics">
+      <div class="notification-bar">
+        <div class="content">
+          <div class="texticon">
+            <img
+              class="ticket-percent-icon"
+              alt=""
+              src="./static/electronics/ticketpercent@2x.png"
+            />
+
+            <div class="off-storewide">30% off storewide — Limited time!</div>
+          </div>
+          <div class="button">
+            <div class="content1">
+              <div class="get-started">Shop Now</div>
+              <img
+                class="iconarrow-right"
+                alt=""
+                src="./static/electronics/iconarrowright@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+        <img class="iconclose" alt="" src="./static/electronics/iconclose@2x.png" />
+      </div>
+      <div class="navigation-bar">
+        <div class="logo" id="logoContainer">
+          <div class="cognitive-crew">Cognitive Crew</div>
+        </div>
+        <div class="elementsnavigationlink-group">
+          <div class="elementsnavigationlink">
+            <div class="elementsnavigationlink">
+              <div class="content1">
+                <img class="iconarrow-right1" alt="" />
+                <a style="color: black; text-decoration:none;" href="{{ url_for('index') }}">
+                <div class="get-started">Home</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="elementsnavigationlink">
+            <div class="button2">
+              <div class="content1">
+                
+
+                <a style="color: black; text-decoration:none;" href="{{ url_for('about') }}">
+                  <div class="get-started">About</div>
+                  </a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="elementsnavigationlink">
+            <div class="button2">
+              <div class="content1">
+                
+                <a style="color: black; text-decoration:none;" href="{{ url_for('Contact') }}">
+                  <div class="get-started">Contact</div>
+                  </a>
+                
+              </div>
+              
+            </div>
+          </div>
+          <div class="elementsnavigationlink">
+            <div class="elementsnavigationlink">
+              <div class="elementsnavigationlink">
+                <a style="color: black; text-decoration:none;" href="{{ url_for('signup') }}">
+                  <div class="get-started">Signup</div>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="icons">
+          <img
+            class="interfaceoutlinesearch-02-icon"
+            alt=""
+            src="./static/electronics/interfaceoutlinesearch-02@2x.png"
+          />
+
+          <img
+            class="interfaceoutlinesearch-02-icon"
+            alt=""
+            src="./static/electronics/interfaceoutlineusercircle@2x.png"
+          />
+
+          <div class="elementsnavigationcart-butto">
+            <div class="ellipse-parent">
+              <div class="frame-child"></div>
+              <b class="b">2</b>
+            </div>
+            <img
+              class="outlineshopping-bag-icon"
+              alt=""
+              src="./static/electronics/outlineshopping-bag@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="hero-section">
+        <div class="image-placeholder">
+          <img
+            class="paste-image-icon"
+            alt=""
+            src="./static/electronics/paste-image.png"
+          />
+        </div>
+        <div class="content6">
+          <div class="text">
+            <div class="header">
+              <div class="listen-to-the-container">
+                <p class="listen-to">Listen to</p>
+                <p class="listen-to">
+                  <span>the </span>
+                  <span class="amazing">amazing</span>
+                  <span class="music-sound"> music sound.</span>
+                </p>
+              </div>
+            </div>
+            <div class="experience-music-like">
+              Experience music like never before
+            </div>
+          </div>
+          <div class="button5">
+            <div class="show-more">Shopping Now</div>
+          </div>
+        </div>
+      </div>
+      <div class="brands-logos">
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+        <div class="team-logologo-01">
+          <div class="bound"></div>
+        </div>
+      </div>
+      <div class="product-carousel">
+        <div class="title">
+          <div class="new-arrivals">New Arrivals</div>
+          
+          <div class="navigation-dots">
+            
+          </div>
+        </div>
+        
+      </div>
+      <div class="elecnew"> 
+        <ul class="elecContainer"></ul>
+          <script>
+          let allLis = [];
+  
+          let elecContainer = document.querySelector(".elecContainer");
+          let liContent = "";
+          for (index in electronics) {
+              let li = document.createElement("li");
+              li.setAttribute("class", `elec elec${index} show`);
+              li.setAttribute("n", electronics[index].name.toLowerCase());
+              li.setAttribute("c", electronics[index].price);
+              
+              liContent = `<img src='${electronics[index].image}' /> <h3>${electronics[index].name}</h3> <p>${electronics[index].price}</p>`;
+              li.innerHTML = liContent;
+              elecContainer.appendChild(li);
+              allLis.push(li);
+          }
+        </script>
+      <div class="banner-grid">
+        <div class="title1">
+          <div class="new-arrivals">Shop Collection</div>
+        </div>
+        <div class="banner-grid1">
+          <div class="elementscard">
+            <div class="image-placeholder6">
+              <img
+                class="paste-image-icon"
+                alt=""
+                src="./static/electronics/pp1.png"
+              />
+            </div>
+            <div class="content12">
+              <div class="title2">
+                <div class="product-name">Headband</div>
+                <div class="phosfluorescently-en">
+                  Phosfluor escently engage worldwide with web-enabled
+                  technology.
+                </div>
+              </div>
+              <div class="button6">
+                <div class="elementsnavigationlink">
+                  <div class="get-started4">Collection</div>
+                </div>
+                <img
+                  class="iconarrow-right4"
+                  alt=""
+                  src="./static/electronics/iconarrowright@2x.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="small-cards">
+            <div class="elementscard1">
+              <div class="image-placeholder6">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/pp2.png"
+                />
+              </div>
+              <div class="content14">
+                <div class="bedroom">Earbuds</div>
+                <div class="button7">
+                  <div class="elementsnavigationlink">
+                    <div class="get-started4">Collection</div>
+                  </div>
+                  <img
+                    class="iconarrow-right4"
+                    alt=""
+                    src="./static/electronics/iconarrowright@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="elementscard1">
+              <div class="image-placeholder6">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/pp3.png"
+                />
+              </div>
+              <div class="content14">
+                <div class="bedroom">Accessories</div>
+                <div class="button7">
+                  <div class="elementsnavigationlink">
+                    <div class="get-started4">Collection</div>
+                  </div>
+                  <img
+                    class="iconarrow-right4"
+                    alt=""
+                    src="./static/electronics/iconarrowright@2x.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-carousel1">
+        <div class="title3">
+          <div class="new-arrivals">Best Seller</div>
+        </div>
+        <div class="row-1">
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i4.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">Hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Sony - WH-1000XM5 Wireless Noise Canceling
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 25,000.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i3.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Beats Studio Pro
+                </div>
+                <div class="price">
+                  <div class="rs-2000000-">Rs 20,000.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i1.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Sony - WH-CH720N Wireless Noise Canceling
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 39,999.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card4">
+            <div class="elements-card3">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i2.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content10">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Skullcandy - Rail True Wireless Earbuds
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 17,000.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-1">
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i5.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">Hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Beats Studio Pro
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 6990.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i6.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  JBL Reflect Flow Pro+ Bluetooth Truly Wireless Sports
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 8000.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card1">
+            <div class="elements-card">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/i7.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content7">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  Bose QuietComfort Headphones
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 23,000.00/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card4">
+            <div class="elements-card3">
+              <div class="image-placeholder1">
+                <img
+                  class="paste-image-icon"
+                  alt=""
+                  src="./static/electronics/I4.png"
+                />
+              </div>
+              <div class="button-hover1">
+                <div class="get-started4">Add to cart</div>
+              </div>
+              <div class="add-to-wishlist1">
+                <img class="iconsheartline" alt="" />
+              </div>
+              <div class="badges">
+                <div class="badge-medium">
+                  <b class="new">hot</b>
+                </div>
+                <div class="badge-medium1">
+                  <b class="new">-50%</b>
+                </div>
+              </div>
+            </div>
+            <div class="content10">
+              <div class="textprice">
+                <img
+                  class="ratingrating-group-icon"
+                  alt=""
+                  src="./static/electronics/ratingrating-group@2x.png"
+                />
+
+                <div class="skullcandy-crusher">
+                  AKG Y600NC Wireless
+                </div>
+                <div class="price">
+                  <div class="off-storewide">Rs 2000.000/-</div>
+                  <div class="div">$400.00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="content26">
+          <div class="image-placeholder17">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/f1.png"
+            />
+          </div>
+          <div class="content27">
+            <div class="title4">
+              <b class="sale">pROMOTION</b>
+              <div class="title5">Hurry up! 40% OFF</div>
+              <div class="phosfluorescently-en1">
+                Thousands of high tech are waiting for you
+              </div>
+            </div>
+            <div class="timer">
+              <div class="offer-expires-in">Offer expires in:</div>
+              <div class="cards">
+                <div class="timer-blocks">
+                  <div class="timernumbercell">
+                    <div class="div17">02</div>
+                  </div>
+                  <div class="days">Days</div>
+                </div>
+                <div class="timer-blocks">
+                  <div class="timernumbercell">
+                    <div class="div18">12</div>
+                  </div>
+                  <div class="days1">Hours</div>
+                </div>
+                <div class="timer-blocks">
+                  <div class="timernumbercell">
+                    <div class="div19">45</div>
+                  </div>
+                  <div class="days2">Minutes</div>
+                </div>
+                <div class="timer-blocks">
+                  <div class="timernumbercell">
+                    <div class="div20">05</div>
+                  </div>
+                  <div class="days3">Seconds</div>
+                </div>
+              </div>
+            </div>
+            <div class="button9">
+              <div class="get-started4">Excluisve</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="values">
+        <div class="card-01">
+          <img
+            class="shipping-and-deliveryoutline"
+            alt=""
+            src="./static/electronics/shipping-and-deliveryoutlinefast-delivery@2x.png"
+          />
+
+          <div class="text1">
+            <div class="free-shipping">Free Shipping</div>
+            <div class="order-above-rs">Order above Rs 2000</div>
+          </div>
+        </div>
+        <div class="card-01">
+          <img
+            class="shipping-and-deliveryoutline"
+            alt=""
+            src="./static/electronics/finance-and-paymentoutlinemoney@2x.png"
+          />
+
+          <div class="text2">
+            <div class="free-shipping">Money-back</div>
+            <div class="order-above-rs">30 days guarantee</div>
+          </div>
+        </div>
+        <div class="card-01">
+          <img
+            class="shipping-and-deliveryoutline"
+            alt=""
+            src="./static/electronics/interfaceoutlinelock-01@2x.png"
+          />
+
+          <div class="text1">
+            <div class="free-shipping">Secure Payments</div>
+            <div class="order-above-rs">Secured by Stripe</div>
+          </div>
+        </div>
+        <div class="card-01">
+          <img
+            class="shipping-and-deliveryoutline"
+            alt=""
+            src="./static/electronics/communicationoutlinecall@2x.png"
+          />
+
+          <div class="text1">
+            <div class="free-shipping">24/7 Support</div>
+            <div class="order-above-rs">Phone and Email support</div>
+          </div>
+        </div>
+      </div>
+      <div class="instagram-newsfeed">
+        <div class="title6">
+          <b class="sale1">newsfeed</b>
+          <div class="title7">Instagram</div>
+          <div class="phosfluorescently-en2">
+            Follow us on social media for more discount & promotions
+          </div>
+          <div class="phosfluorescently-en3">Cognitive Crew</div>
+        </div>
+        <div class="cards1">
+          <div class="instagramelementsimage">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/image.png"
+            />
+          </div>
+          <div class="instagramelementsimage">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/Image-1.png"
+            />
+          </div>
+          <div class="instagramelementsimage">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/Image-2.png"
+            />
+          </div>
+          <div class="instagramelementsimage">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/Image-3.png"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="newsletter">
+        <div class="banner1">
+          <div class="image-placeholder18">
+            <img
+              class="paste-image-icon"
+              alt=""
+              src="./static/electronics/paste-image@2x.png"
+            />
+          </div>
+          <div class="content28">
+            <div class="header1">
+              <div class="create-your-messaing">Join Our Newsletter</div>
+              <div class="sign-up-for">
+                Sign up for deals, new products and promotions
+              </div>
+            </div>
+            <div class="form-input">
+              <div class="input">
+                <div class="iconinput">
+                  <img
+                    class="ticket-percent-icon"
+                    alt=""
+                    src="./static/electronics/iconemail@2x.png"
+                  />
+
+                  <div class="your-email">Email address</div>
+                </div>
+                <div class="button10">
+                  <div class="content1">
+                    <img class="iconarrow-right1" alt="" />
+
+                    <div class="get-started4">Signup</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="logo-and-links">
+            <div class="logo-and-slogan">
+              <div class="logo1">
+                <div class="cognitive-crew1">Cognitive crew</div>
+              </div>
+              <div class="logo-and-slogan-child"></div>
+              <div class="an-international-store">Headphone Store</div>
+            </div>
+            <div class="nav">
+              <div class="home">Home</div>
+              <div class="home">Shop</div>
+              <div class="home">Product</div>
+              <div class="home">Blog</div>
+              <div class="home">Contact Us</div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <div class="copyright">
+            <div class="copyright-2023">
+              Copyright © 2023 Cognitive Crew. All rights reserved
+            </div>
+            <div class="privacy-policy">Privacy Policy</div>
+            <div class="privacy-policy">Terms of Use</div>
+          </div>
+          <div class="social-icon">
+            <img
+              class="ticket-percent-icon"
+              alt=""
+              src="./static/electronics/socialoutlineinstagram@2x.png"
+            />
+
+            <img
+              class="interfaceoutlinesearch-02-icon"
+              alt=""
+              src="./static/electronics/socialoutlinefacebook@2x.png"
+            />
+
+            <div class="socialoutlineyoutube">
+              <div class="socialoutlineyoutube-child"></div>
+              <img
+                class="socialoutlineyoutube-item"
+                alt=""
+                src="./static/electronics/vector-2900@2x.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var logoContainer = document.getElementById("logoContainer");
+      if (logoContainer) {
+        logoContainer.addEventListener("click", function (e) {
+          // Please sync "E-Commerce HomePage" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
