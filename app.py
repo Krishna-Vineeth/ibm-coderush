@@ -42,6 +42,12 @@ def cart():
 def checkout():
     return render_template('checkout.html')
 
+@app.route('/wishlist')
+def wishlist():
+    return render_template('wishlist.html')
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
