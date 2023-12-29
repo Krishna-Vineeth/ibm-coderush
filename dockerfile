@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install Flask
-RUN pip install --no-cache-dir -r requirements.txt
+
 
 # Make port 5000 available to the world outside this container
 EXPOSE 80
@@ -19,4 +19,5 @@ ENV FLASK_APP=app.py
 # Run app.py when the container launches
 CMD ["git", "clone", "https://github.com/Krishna-Vineeth/ibm-coderush"]
 CMD["cd","ibm-coderush"]
+RUN pip install --no-cache-dir -r requirements.txt
 CMD ["flask", "run", "--host=0.0.0.0"]
